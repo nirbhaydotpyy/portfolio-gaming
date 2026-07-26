@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZoroPlays — Gaming Content Creator</title>
+
+  <!-- Google Font: Inter (body) + Poppins (display/headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================
+       NAVIGATION (pure CSS, no JS — checkbox hack
+       for mobile menu toggle)
+  ========================================== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">Zoro<span>Plays</span></a>
+
+      <!-- Hidden checkbox drives the mobile nav, no JS needed -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================
+         HERO SECTION
+    ========================================== -->
+    <section id="home" class="hero">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">
+          <span class="live-dot"></span> Currently streaming the grind
+        </p>
+        <h1 class="hero-title">Zoro<span class="accent">Plays</span></h1>
+        <p class="hero-subtitle">Gaming Content Creator</p>
+        <p class="hero-desc">
+          Creating cinematic gameplay videos, story walkthroughs, and
+          high-quality gaming content.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary">Watch on YouTube</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FEATURED VIDEOS SECTION
+    ========================================== -->
+    <section id="videos" class="section videos-section">
+      <div class="container">
+        <p class="section-eyebrow">Featured</p>
+        <h2 class="section-title">Latest Uploads</h2>
+
+        <div class="video-grid">
+
+          <!-- Video Card 1 -->
+          <article class="video-card">
+            <div class="thumb-wrap">
+              <img src="https://picsum.photos/seed/zoro-tekken/600/400" alt="Thumbnail for Tekken boss rush cinematic episode" loading="lazy">
+              <span class="badge">EP. 01</span>
+              <div class="play-overlay">
+                <svg viewBox="0 0 24 24" class="play-icon" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Tekken Boss Rush — No Damage</h3>
+              <p>A cinematic, no-hit clear of the toughest AI bosses in the roster.</p>
+            </div>
+          </article>
+
+          <!-- Video Card 2 -->
+          <article class="video-card">
+            <div class="thumb-wrap">
+              <img src="https://picsum.photos/seed/zoro-gta/600/400" alt="Thumbnail for GTA V story walkthrough episode" loading="lazy">
+              <span class="badge">EP. 02</span>
+              <div class="play-overlay">
+                <svg viewBox="0 0 24 24" class="play-icon" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>GTA V — The Heist Finale</h3>
+              <p>The final job goes sideways in this story-driven walkthrough.</p>
+            </div>
+          </article>
+
+          <!-- Video Card 3 -->
+          <article class="video-card">
+            <div class="thumb-wrap">
+              <img src="https://picsum.photos/seed/zoro-valorant/600/400" alt="Thumbnail for Valorant ranked highlights episode" loading="lazy">
+              <span class="badge">EP. 03</span>
+              <div class="play-overlay">
+                <svg viewBox="0 0 24 24" class="play-icon" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Valorant — Ranked Ace Clutch</h3>
+              <p>A 1v4 clutch that turned the match around in overtime.</p>
+            </div>
+          </article>
+
+          <!-- Video Card 4 -->
+          <article class="video-card">
+            <div class="thumb-wrap">
+              <img src="https://picsum.photos/seed/zoro-forza/600/400" alt="Thumbnail for Forza Horizon cinematic drive episode" loading="lazy">
+              <span class="badge">EP. 04</span>
+              <div class="play-overlay">
+                <svg viewBox="0 0 24 24" class="play-icon" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3>Forza Horizon — Sunset Circuit</h3>
+              <p>A cinematic drive through the golden hour on the coastal circuit.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         ABOUT SECTION
+    ========================================== -->
+    <section id="about" class="section about-section">
+      <div class="container about-inner">
+        <p class="section-eyebrow">Who I Am</p>
+        <h2 class="section-title">About</h2>
+        <p class="about-text">
+          I'm a passionate gaming content creator focused on cinematic gameplay,
+          walkthroughs, boss fights, and entertaining edits. My goal is to create
+          videos that immerse viewers in unforgettable gaming experiences.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================
+         GAMES SECTION
+    ========================================== -->
+    <section id="games" class="section games-section">
+      <div class="container">
+        <p class="section-eyebrow">Playlist</p>
+        <h2 class="section-title">Games I Play</h2>
+
+        <div class="games-grid">
+          <div class="game-card">
+            <span class="game-icon" aria-hidden="true">🥋</span>
+            <h3>Tekken</h3>
+          </div>
+          <div class="game-card">
+            <span class="game-icon" aria-hidden="true">🚗</span>
+            <h3>GTA V</h3>
+          </div>
+          <div class="game-card">
+            <span class="game-icon" aria-hidden="true">🎯</span>
+            <h3>Valorant</h3>
+          </div>
+          <div class="game-card">
+            <span class="game-icon" aria-hidden="true">🪖</span>
+            <h3>PUBG</h3>
+          </div>
+          <div class="game-card">
+            <span class="game-icon" aria-hidden="true">🏎️</span>
+            <h3>Forza Horizon</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         CONTACT SECTION
+    ========================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="contact-sub">Let's connect on your platform of choice.</p>
+
+        <div class="contact-buttons">
+          <a href="#" class="btn btn-contact">
+            <span class="btn-icon" aria-hidden="true">▶</span> YouTube
+          </a>
+          <a href="#" class="btn btn-contact">
+            <span class="btn-icon" aria-hidden="true">◎</span> Instagram
+          </a>
+          <a href="mailto:hello@zoroplays.com" class="btn btn-contact">
+            <span class="btn-icon" aria-hidden="true">✉</span> Email
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================
+       FOOTER
+  ========================================== -->
+  <footer class="site-footer">
+    <p>© 2026 ZoroPlays</p>
+  </footer>
+
+</body>
+</html>
